@@ -10795,7 +10795,10 @@ div.CodeMirror{
 @media only screen and (max-width:980px){
   .generate-controls{
     flex-direction: column;
-    max-width: 90%;
+    /* max-width: 100%; */
+  }
+  div.CodeMirror{
+    width: 100%;
   }
   #countryselect{
     margin-right: auto;
