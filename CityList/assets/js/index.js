@@ -35,4 +35,7 @@ $(document).ready(function() {
       }
     });
   });
+  console.log("downloaded");
+  $(".main").css("filter", "none");
+  $(".loader").fadeOut(300);
 });

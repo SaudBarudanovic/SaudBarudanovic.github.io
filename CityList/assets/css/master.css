@@ -10892,3 +10892,13 @@ div.CodeMirror{
     transform: rotate(360deg);
   }
 }
+.loader{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+.main{
+  filter: brightness(40%) blur(5px);
+}
