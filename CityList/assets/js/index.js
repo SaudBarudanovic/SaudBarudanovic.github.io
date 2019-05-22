@@ -17,13 +17,7 @@ $(document).ready(function() {
         for (i in res) {
           if (res[i].country === countryChoice) {
             var currentCity = res[i].name;
-            var sterilisedValue = currentCity.replace(/\s/g, '').toLowerCase();
-            sterilisedValue = sterilisedValue.replace(/ć/g, 'c');
-            sterilisedValue = sterilisedValue.replace(/č/g, 'c');
-            sterilisedValue = sterilisedValue.replace(/ž/g, 'z');
-            sterilisedValue = sterilisedValue.replace(/đ/g, 'd');
-            sterilisedValue = sterilisedValue.replace(/š/g, 's');
-            var value = '  <option value="' + sterilisedValue + '">' + currentCity + '</option>';
+            var value = '  <option value="' + currentCity + '">' + currentCity + '</option>';
             cityArray.push(value)
           }
         }
