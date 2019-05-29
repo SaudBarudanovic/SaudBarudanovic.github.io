@@ -17,7 +17,9 @@ $(document).ready(function() {
         for (i in res) {
           if (res[i].country === countryChoice) {
             var currentCity = res[i].name;
-            var value = '  <option value="' + currentCity + '">' + currentCity + '</option>';
+            var currentLat = res[i].lat;
+            var currentLng = res[i].lng;
+            var value = '  <option aria-lat="' + currentLat + '" aria-lng="' + currentLng + '" value="' + currentCity + '">' + currentCity + '</option>';
             cityArray.push(value)
           }
         }
